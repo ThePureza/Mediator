@@ -2,8 +2,12 @@ public class Player {
 
     private String name;
 
-    public String askForRollAction(String actionDescription, Action action) {
-        return DungeonMaster.getInstancia().rollAction(this.name, actionDescription, action);
+    public Player (String name){
+        this.name = name;
+    }
+
+    public String askForRollAction(String enemy, Action action) {
+        return DungeonMaster.getInstancia().rollAction(this.name, enemy, action);
     }
 
     public String describeAction(Action action) {

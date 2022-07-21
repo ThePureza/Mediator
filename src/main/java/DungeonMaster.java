@@ -8,9 +8,9 @@ public class DungeonMaster {
         return instancia;
     }
 
-    public String rollAction(String name, String actiondescription, Action action) {
-        return "O jogador " + name + "realiza a ação de " + action.toString() + ".\n" +
-                ">>" + action.rollAction(actiondescription);
+    public String rollAction(String name, String enemy, Action action) {
+        return "O jogador " + name + " realiza a ação de " + action.toString() + ".\n" +
+                ">>" + action.rollAction(enemy);
     }
 
     public String describeAction(String name, Action action) {
